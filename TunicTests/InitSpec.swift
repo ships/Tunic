@@ -7,11 +7,13 @@
 //
 
 import Foundation
-//import Quick
-//import Nimble
-//
-//class InitSpec: QuickSpec {
-//    override func spec() {
-//
-//    }
-//}
+import Quick
+import Nimble
+
+class InitSpec: QuickSpec {
+    override func spec() {
+        it("runs the test suite") {
+            print("this test should appear in the test output")
+        }
+    }
+}
