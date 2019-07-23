@@ -1,0 +1,6 @@
+#!/bin/bash -eux
+
+xcodebuild test \
+  -workspace Tunic.xcworkspace \
+  -scheme Tunic \
+  $@
