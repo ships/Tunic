@@ -7,64 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B6DFCCC922E776A400881439 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DFCCC822E776A400881439 /* AppDelegate.swift */; };
-		B6DFCCCB22E776A400881439 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DFCCCA22E776A400881439 /* ViewController.swift */; };
-		B6DFCCCE22E776A400881439 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DFCCCC22E776A400881439 /* Main.storyboard */; };
-		B6DFCCD022E776A500881439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6DFCCCF22E776A500881439 /* Assets.xcassets */; };
-		B6DFCCD322E776A500881439 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DFCCD122E776A500881439 /* LaunchScreen.storyboard */; };
-		B6DFCCDE22E776A500881439 /* TunicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DFCCDD22E776A500881439 /* TunicTests.swift */; };
-		B6DFCCE922E776A500881439 /* TunicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DFCCE822E776A500881439 /* TunicUITests.swift */; };
+		B668FA1222E77BD300748C9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668FA1122E77BD300748C9A /* AppDelegate.swift */; };
+		B668FA1422E77BD300748C9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668FA1322E77BD300748C9A /* ViewController.swift */; };
+		B668FA1622E77BD400748C9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B668FA1522E77BD400748C9A /* Assets.xcassets */; };
+		B668FA1922E77BD400748C9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B668FA1722E77BD400748C9A /* Main.storyboard */; };
+		B668FA2522E77BD400748C9A /* TunicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668FA2422E77BD400748C9A /* TunicTests.swift */; };
+		B668FA3022E77BD400748C9A /* TunicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668FA2F22E77BD400748C9A /* TunicUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B6DFCCDA22E776A500881439 /* PBXContainerItemProxy */ = {
+		B668FA2122E77BD400748C9A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B6DFCCBD22E776A400881439 /* Project object */;
+			containerPortal = B668FA0622E77BD300748C9A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B6DFCCC422E776A400881439;
+			remoteGlobalIDString = B668FA0D22E77BD300748C9A;
 			remoteInfo = Tunic;
 		};
-		B6DFCCE522E776A500881439 /* PBXContainerItemProxy */ = {
+		B668FA2C22E77BD400748C9A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B6DFCCBD22E776A400881439 /* Project object */;
+			containerPortal = B668FA0622E77BD300748C9A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B6DFCCC422E776A400881439;
+			remoteGlobalIDString = B668FA0D22E77BD300748C9A;
 			remoteInfo = Tunic;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B6DFCCC522E776A400881439 /* Tunic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tunic.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6DFCCC822E776A400881439 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B6DFCCCA22E776A400881439 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B6DFCCCD22E776A400881439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B6DFCCCF22E776A500881439 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B6DFCCD222E776A500881439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B6DFCCD422E776A500881439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6DFCCD922E776A500881439 /* TunicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TunicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6DFCCDD22E776A500881439 /* TunicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunicTests.swift; sourceTree = "<group>"; };
-		B6DFCCDF22E776A500881439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6DFCCE422E776A500881439 /* TunicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TunicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6DFCCE822E776A500881439 /* TunicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunicUITests.swift; sourceTree = "<group>"; };
-		B6DFCCEA22E776A500881439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B668FA0E22E77BD300748C9A /* Tunic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tunic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B668FA1122E77BD300748C9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B668FA1322E77BD300748C9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B668FA1522E77BD400748C9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B668FA1822E77BD400748C9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B668FA1A22E77BD400748C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B668FA1B22E77BD400748C9A /* Tunic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tunic.entitlements; sourceTree = "<group>"; };
+		B668FA2022E77BD400748C9A /* TunicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TunicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B668FA2422E77BD400748C9A /* TunicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunicTests.swift; sourceTree = "<group>"; };
+		B668FA2622E77BD400748C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B668FA2B22E77BD400748C9A /* TunicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TunicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B668FA2F22E77BD400748C9A /* TunicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunicUITests.swift; sourceTree = "<group>"; };
+		B668FA3122E77BD400748C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B6DFCCC222E776A400881439 /* Frameworks */ = {
+		B668FA0B22E77BD300748C9A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B6DFCCD622E776A500881439 /* Frameworks */ = {
+		B668FA1D22E77BD400748C9A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B6DFCCE122E776A500881439 /* Frameworks */ = {
+		B668FA2822E77BD400748C9A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -74,53 +73,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B6DFCCBC22E776A400881439 = {
+		B668FA0522E77BD300748C9A = {
 			isa = PBXGroup;
 			children = (
-				B6DFCCC722E776A400881439 /* Tunic */,
-				B6DFCCDC22E776A500881439 /* TunicTests */,
-				B6DFCCE722E776A500881439 /* TunicUITests */,
-				B6DFCCC622E776A400881439 /* Products */,
+				B668FA1022E77BD300748C9A /* Tunic */,
+				B668FA2322E77BD400748C9A /* TunicTests */,
+				B668FA2E22E77BD400748C9A /* TunicUITests */,
+				B668FA0F22E77BD300748C9A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B6DFCCC622E776A400881439 /* Products */ = {
+		B668FA0F22E77BD300748C9A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B6DFCCC522E776A400881439 /* Tunic.app */,
-				B6DFCCD922E776A500881439 /* TunicTests.xctest */,
-				B6DFCCE422E776A500881439 /* TunicUITests.xctest */,
+				B668FA0E22E77BD300748C9A /* Tunic.app */,
+				B668FA2022E77BD400748C9A /* TunicTests.xctest */,
+				B668FA2B22E77BD400748C9A /* TunicUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B6DFCCC722E776A400881439 /* Tunic */ = {
+		B668FA1022E77BD300748C9A /* Tunic */ = {
 			isa = PBXGroup;
 			children = (
-				B6DFCCC822E776A400881439 /* AppDelegate.swift */,
-				B6DFCCCA22E776A400881439 /* ViewController.swift */,
-				B6DFCCCC22E776A400881439 /* Main.storyboard */,
-				B6DFCCCF22E776A500881439 /* Assets.xcassets */,
-				B6DFCCD122E776A500881439 /* LaunchScreen.storyboard */,
-				B6DFCCD422E776A500881439 /* Info.plist */,
+				B668FA1122E77BD300748C9A /* AppDelegate.swift */,
+				B668FA1322E77BD300748C9A /* ViewController.swift */,
+				B668FA1522E77BD400748C9A /* Assets.xcassets */,
+				B668FA1722E77BD400748C9A /* Main.storyboard */,
+				B668FA1A22E77BD400748C9A /* Info.plist */,
+				B668FA1B22E77BD400748C9A /* Tunic.entitlements */,
 			);
 			path = Tunic;
 			sourceTree = "<group>";
 		};
-		B6DFCCDC22E776A500881439 /* TunicTests */ = {
+		B668FA2322E77BD400748C9A /* TunicTests */ = {
 			isa = PBXGroup;
 			children = (
-				B6DFCCDD22E776A500881439 /* TunicTests.swift */,
-				B6DFCCDF22E776A500881439 /* Info.plist */,
+				B668FA2422E77BD400748C9A /* TunicTests.swift */,
+				B668FA2622E77BD400748C9A /* Info.plist */,
 			);
 			path = TunicTests;
 			sourceTree = "<group>";
 		};
-		B6DFCCE722E776A500881439 /* TunicUITests */ = {
+		B668FA2E22E77BD400748C9A /* TunicUITests */ = {
 			isa = PBXGroup;
 			children = (
-				B6DFCCE822E776A500881439 /* TunicUITests.swift */,
-				B6DFCCEA22E776A500881439 /* Info.plist */,
+				B668FA2F22E77BD400748C9A /* TunicUITests.swift */,
+				B668FA3122E77BD400748C9A /* Info.plist */,
 			);
 			path = TunicUITests;
 			sourceTree = "<group>";
@@ -128,13 +127,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B6DFCCC422E776A400881439 /* Tunic */ = {
+		B668FA0D22E77BD300748C9A /* Tunic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B6DFCCED22E776A500881439 /* Build configuration list for PBXNativeTarget "Tunic" */;
+			buildConfigurationList = B668FA3422E77BD400748C9A /* Build configuration list for PBXNativeTarget "Tunic" */;
 			buildPhases = (
-				B6DFCCC122E776A400881439 /* Sources */,
-				B6DFCCC222E776A400881439 /* Frameworks */,
-				B6DFCCC322E776A400881439 /* Resources */,
+				B668FA0A22E77BD300748C9A /* Sources */,
+				B668FA0B22E77BD300748C9A /* Frameworks */,
+				B668FA0C22E77BD300748C9A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -142,69 +141,69 @@
 			);
 			name = Tunic;
 			productName = Tunic;
-			productReference = B6DFCCC522E776A400881439 /* Tunic.app */;
+			productReference = B668FA0E22E77BD300748C9A /* Tunic.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B6DFCCD822E776A500881439 /* TunicTests */ = {
+		B668FA1F22E77BD400748C9A /* TunicTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B6DFCCF022E776A500881439 /* Build configuration list for PBXNativeTarget "TunicTests" */;
+			buildConfigurationList = B668FA3722E77BD400748C9A /* Build configuration list for PBXNativeTarget "TunicTests" */;
 			buildPhases = (
-				B6DFCCD522E776A500881439 /* Sources */,
-				B6DFCCD622E776A500881439 /* Frameworks */,
-				B6DFCCD722E776A500881439 /* Resources */,
+				B668FA1C22E77BD400748C9A /* Sources */,
+				B668FA1D22E77BD400748C9A /* Frameworks */,
+				B668FA1E22E77BD400748C9A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B6DFCCDB22E776A500881439 /* PBXTargetDependency */,
+				B668FA2222E77BD400748C9A /* PBXTargetDependency */,
 			);
 			name = TunicTests;
 			productName = TunicTests;
-			productReference = B6DFCCD922E776A500881439 /* TunicTests.xctest */;
+			productReference = B668FA2022E77BD400748C9A /* TunicTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B6DFCCE322E776A500881439 /* TunicUITests */ = {
+		B668FA2A22E77BD400748C9A /* TunicUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B6DFCCF322E776A500881439 /* Build configuration list for PBXNativeTarget "TunicUITests" */;
+			buildConfigurationList = B668FA3A22E77BD400748C9A /* Build configuration list for PBXNativeTarget "TunicUITests" */;
 			buildPhases = (
-				B6DFCCE022E776A500881439 /* Sources */,
-				B6DFCCE122E776A500881439 /* Frameworks */,
-				B6DFCCE222E776A500881439 /* Resources */,
+				B668FA2722E77BD400748C9A /* Sources */,
+				B668FA2822E77BD400748C9A /* Frameworks */,
+				B668FA2922E77BD400748C9A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B6DFCCE622E776A500881439 /* PBXTargetDependency */,
+				B668FA2D22E77BD400748C9A /* PBXTargetDependency */,
 			);
 			name = TunicUITests;
 			productName = TunicUITests;
-			productReference = B6DFCCE422E776A500881439 /* TunicUITests.xctest */;
+			productReference = B668FA2B22E77BD400748C9A /* TunicUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B6DFCCBD22E776A400881439 /* Project object */ = {
+		B668FA0622E77BD300748C9A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "The Better Fish Orchestra";
 				TargetAttributes = {
-					B6DFCCC422E776A400881439 = {
+					B668FA0D22E77BD300748C9A = {
 						CreatedOnToolsVersion = 10.3;
 					};
-					B6DFCCD822E776A500881439 = {
+					B668FA1F22E77BD400748C9A = {
 						CreatedOnToolsVersion = 10.3;
-						TestTargetID = B6DFCCC422E776A400881439;
+						TestTargetID = B668FA0D22E77BD300748C9A;
 					};
-					B6DFCCE322E776A500881439 = {
+					B668FA2A22E77BD400748C9A = {
 						CreatedOnToolsVersion = 10.3;
-						TestTargetID = B6DFCCC422E776A400881439;
+						TestTargetID = B668FA0D22E77BD300748C9A;
 					};
 				};
 			};
-			buildConfigurationList = B6DFCCC022E776A400881439 /* Build configuration list for PBXProject "Tunic" */;
+			buildConfigurationList = B668FA0922E77BD300748C9A /* Build configuration list for PBXProject "Tunic" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -212,37 +211,36 @@
 				en,
 				Base,
 			);
-			mainGroup = B6DFCCBC22E776A400881439;
-			productRefGroup = B6DFCCC622E776A400881439 /* Products */;
+			mainGroup = B668FA0522E77BD300748C9A;
+			productRefGroup = B668FA0F22E77BD300748C9A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B6DFCCC422E776A400881439 /* Tunic */,
-				B6DFCCD822E776A500881439 /* TunicTests */,
-				B6DFCCE322E776A500881439 /* TunicUITests */,
+				B668FA0D22E77BD300748C9A /* Tunic */,
+				B668FA1F22E77BD400748C9A /* TunicTests */,
+				B668FA2A22E77BD400748C9A /* TunicUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B6DFCCC322E776A400881439 /* Resources */ = {
+		B668FA0C22E77BD300748C9A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6DFCCD322E776A500881439 /* LaunchScreen.storyboard in Resources */,
-				B6DFCCD022E776A500881439 /* Assets.xcassets in Resources */,
-				B6DFCCCE22E776A400881439 /* Main.storyboard in Resources */,
+				B668FA1622E77BD400748C9A /* Assets.xcassets in Resources */,
+				B668FA1922E77BD400748C9A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B6DFCCD722E776A500881439 /* Resources */ = {
+		B668FA1E22E77BD400748C9A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B6DFCCE222E776A500881439 /* Resources */ = {
+		B668FA2922E77BD400748C9A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -252,67 +250,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B6DFCCC122E776A400881439 /* Sources */ = {
+		B668FA0A22E77BD300748C9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6DFCCCB22E776A400881439 /* ViewController.swift in Sources */,
-				B6DFCCC922E776A400881439 /* AppDelegate.swift in Sources */,
+				B668FA1422E77BD300748C9A /* ViewController.swift in Sources */,
+				B668FA1222E77BD300748C9A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B6DFCCD522E776A500881439 /* Sources */ = {
+		B668FA1C22E77BD400748C9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6DFCCDE22E776A500881439 /* TunicTests.swift in Sources */,
+				B668FA2522E77BD400748C9A /* TunicTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B6DFCCE022E776A500881439 /* Sources */ = {
+		B668FA2722E77BD400748C9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6DFCCE922E776A500881439 /* TunicUITests.swift in Sources */,
+				B668FA3022E77BD400748C9A /* TunicUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B6DFCCDB22E776A500881439 /* PBXTargetDependency */ = {
+		B668FA2222E77BD400748C9A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B6DFCCC422E776A400881439 /* Tunic */;
-			targetProxy = B6DFCCDA22E776A500881439 /* PBXContainerItemProxy */;
+			target = B668FA0D22E77BD300748C9A /* Tunic */;
+			targetProxy = B668FA2122E77BD400748C9A /* PBXContainerItemProxy */;
 		};
-		B6DFCCE622E776A500881439 /* PBXTargetDependency */ = {
+		B668FA2D22E77BD400748C9A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B6DFCCC422E776A400881439 /* Tunic */;
-			targetProxy = B6DFCCE522E776A500881439 /* PBXContainerItemProxy */;
+			target = B668FA0D22E77BD300748C9A /* Tunic */;
+			targetProxy = B668FA2C22E77BD400748C9A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B6DFCCCC22E776A400881439 /* Main.storyboard */ = {
+		B668FA1722E77BD400748C9A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B6DFCCCD22E776A400881439 /* Base */,
+				B668FA1822E77BD400748C9A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B6DFCCD122E776A500881439 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B6DFCCD222E776A500881439 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B6DFCCEB22E776A500881439 /* Debug */ = {
+		B668FA3222E77BD400748C9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -344,7 +334,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -363,17 +353,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		B6DFCCEC22E776A500881439 /* Release */ = {
+		B668FA3322E77BD400748C9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -405,7 +395,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -418,124 +408,125 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		B6DFCCEE22E776A500881439 /* Debug */ = {
+		B668FA3522E77BD400748C9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Tunic/Tunic.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Tunic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
+					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.betterfish.Tunic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		B6DFCCEF22E776A500881439 /* Release */ = {
+		B668FA3622E77BD400748C9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Tunic/Tunic.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Tunic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
+					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.betterfish.Tunic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		B6DFCCF122E776A500881439 /* Debug */ = {
+		B668FA3822E77BD400748C9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TunicTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.betterfish.TunicTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tunic.app/Tunic";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tunic.app/Contents/MacOS/Tunic";
 			};
 			name = Debug;
 		};
-		B6DFCCF222E776A500881439 /* Release */ = {
+		B668FA3922E77BD400748C9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TunicTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.betterfish.TunicTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tunic.app/Tunic";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tunic.app/Contents/MacOS/Tunic";
 			};
 			name = Release;
 		};
-		B6DFCCF422E776A500881439 /* Debug */ = {
+		B668FA3B22E77BD400748C9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TunicUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.betterfish.TunicUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Tunic;
 			};
 			name = Debug;
 		};
-		B6DFCCF522E776A500881439 /* Release */ = {
+		B668FA3C22E77BD400748C9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TunicUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.betterfish.TunicUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Tunic;
 			};
 			name = Release;
@@ -543,43 +534,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B6DFCCC022E776A400881439 /* Build configuration list for PBXProject "Tunic" */ = {
+		B668FA0922E77BD300748C9A /* Build configuration list for PBXProject "Tunic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B6DFCCEB22E776A500881439 /* Debug */,
-				B6DFCCEC22E776A500881439 /* Release */,
+				B668FA3222E77BD400748C9A /* Debug */,
+				B668FA3322E77BD400748C9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B6DFCCED22E776A500881439 /* Build configuration list for PBXNativeTarget "Tunic" */ = {
+		B668FA3422E77BD400748C9A /* Build configuration list for PBXNativeTarget "Tunic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B6DFCCEE22E776A500881439 /* Debug */,
-				B6DFCCEF22E776A500881439 /* Release */,
+				B668FA3522E77BD400748C9A /* Debug */,
+				B668FA3622E77BD400748C9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B6DFCCF022E776A500881439 /* Build configuration list for PBXNativeTarget "TunicTests" */ = {
+		B668FA3722E77BD400748C9A /* Build configuration list for PBXNativeTarget "TunicTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B6DFCCF122E776A500881439 /* Debug */,
-				B6DFCCF222E776A500881439 /* Release */,
+				B668FA3822E77BD400748C9A /* Debug */,
+				B668FA3922E77BD400748C9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B6DFCCF322E776A500881439 /* Build configuration list for PBXNativeTarget "TunicUITests" */ = {
+		B668FA3A22E77BD400748C9A /* Build configuration list for PBXNativeTarget "TunicUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B6DFCCF422E776A500881439 /* Debug */,
-				B6DFCCF522E776A500881439 /* Release */,
+				B668FA3B22E77BD400748C9A /* Debug */,
+				B668FA3C22E77BD400748C9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B6DFCCBD22E776A400881439 /* Project object */;
+	rootObject = B668FA0622E77BD300748C9A /* Project object */;
 }
