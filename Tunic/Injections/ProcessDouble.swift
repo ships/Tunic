@@ -8,4 +8,12 @@
 
 import Foundation
 
-class ProcessDouble: Process { }
+protocol ProcessDouble {
+    func run() throws
+}
+
+extension Process: ProcessDouble {}
+
+protocol ProcessFactory {
+    func makeProcess(cmd: String) -> ProcessDouble
+}
