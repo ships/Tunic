@@ -15,9 +15,6 @@
 		B618DA6022E7D000008CEF8B /* Cuckoo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B618DA5722E7CFE0008CEF8B /* Cuckoo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B618DA6122E7D000008CEF8B /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B618DA5522E7CFE0008CEF8B /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B618DA6222E7D000008CEF8B /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B618DA5822E7CFE0008CEF8B /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B618DA6322E7D007008CEF8B /* Cuckoo.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = B618DA5422E7CFE0008CEF8B /* Cuckoo.framework.dSYM */; };
-		B618DA6422E7D007008CEF8B /* Nimble.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = B618DA5622E7CFE0008CEF8B /* Nimble.framework.dSYM */; };
-		B618DA6522E7D007008CEF8B /* Quick.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = B618DA5922E7CFE0008CEF8B /* Quick.framework.dSYM */; };
 		B618DA6722E7D076008CEF8B /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B618DA6622E7D076008CEF8B /* GeneratedMocks.swift */; };
 		B618DA6A22E7D1EE008CEF8B /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B618DA5522E7CFE0008CEF8B /* Nimble.framework */; };
 		B618DA6B22E7D1EE008CEF8B /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B618DA5822E7CFE0008CEF8B /* Quick.framework */; };
@@ -31,6 +28,9 @@
 		B668FA1922E77BD400748C9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B668FA1722E77BD400748C9A /* Main.storyboard */; };
 		B668FA2522E77BD400748C9A /* TunicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668FA2422E77BD400748C9A /* TunicTests.swift */; };
 		B668FA3022E77BD400748C9A /* TunicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668FA2F22E77BD400748C9A /* TunicUITests.swift */; };
+		B6AE436122EA6ECC00D51B44 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AE436022EA6ECC00D51B44 /* Resolver.swift */; };
+		B6AE436522EA715600D51B44 /* ProcessDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AE436422EA715600D51B44 /* ProcessDouble.swift */; };
+		B6AE436722EA73CC00D51B44 /* ResolverSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AE436622EA73CC00D51B44 /* ResolverSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,9 +69,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
-				B618DA6322E7D007008CEF8B /* Cuckoo.framework.dSYM in CopyFiles */,
-				B618DA6422E7D007008CEF8B /* Nimble.framework.dSYM in CopyFiles */,
-				B618DA6522E7D007008CEF8B /* Quick.framework.dSYM in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +119,9 @@
 		B668FA2B22E77BD400748C9A /* TunicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TunicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B668FA2F22E77BD400748C9A /* TunicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunicUITests.swift; sourceTree = "<group>"; };
 		B668FA3122E77BD400748C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6AE436022EA6ECC00D51B44 /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
+		B6AE436422EA715600D51B44 /* ProcessDouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessDouble.swift; sourceTree = "<group>"; };
+		B6AE436622EA73CC00D51B44 /* ResolverSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolverSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +157,7 @@
 		B618DA2522E7C986008CEF8B /* DaemonsSpec */ = {
 			isa = PBXGroup;
 			children = (
+				B6AE436622EA73CC00D51B44 /* ResolverSpec.swift */,
 			);
 			path = DaemonsSpec;
 			sourceTree = "<group>";
@@ -164,17 +165,19 @@
 		B618DA2722E7C9B6008CEF8B /* Daemons */ = {
 			isa = PBXGroup;
 			children = (
+				B6AE436022EA6ECC00D51B44 /* Resolver.swift */,
 			);
 			name = Daemons;
 			path = /Users/eve/workspace/Tunic/Tunic/Daemons;
 			sourceTree = "<absolute>";
 		};
-		B618DA4322E7CCA2008CEF8B /* Protocols */ = {
+		B618DA4322E7CCA2008CEF8B /* Injections */ = {
 			isa = PBXGroup;
 			children = (
 				B618DA2822E7CA0B008CEF8B /* Daemon.swift */,
+				B6AE436422EA715600D51B44 /* ProcessDouble.swift */,
 			);
-			path = Protocols;
+			path = Injections;
 			sourceTree = "<group>";
 		};
 		B618DA5322E7CF3B008CEF8B /* Carthage */ = {
@@ -214,7 +217,7 @@
 		B668FA1022E77BD300748C9A /* Tunic */ = {
 			isa = PBXGroup;
 			children = (
-				B618DA4322E7CCA2008CEF8B /* Protocols */,
+				B618DA4322E7CCA2008CEF8B /* Injections */,
 				B618DA2722E7C9B6008CEF8B /* Daemons */,
 				B668FA1122E77BD300748C9A /* AppDelegate.swift */,
 				B668FA1322E77BD300748C9A /* ViewController.swift */,
@@ -273,10 +276,10 @@
 			buildPhases = (
 				B618DA4022E7CBEA008CEF8B /* ShellScript */,
 				B668FA1C22E77BD400748C9A /* Sources */,
-				B668FA1D22E77BD400748C9A /* Frameworks */,
 				B668FA1E22E77BD400748C9A /* Resources */,
 				B618DA1322E7C387008CEF8B /* CopyFiles */,
 				B618DA1622E7C39C008CEF8B /* CopyFiles */,
+				B668FA1D22E77BD400748C9A /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -393,7 +396,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\nCarthage/Checkouts/Cuckoo/run generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}\"/Protocols/*\n# ... and so forth, the last line should never end with a backslash\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\nCarthage/Checkouts/Cuckoo/run generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}\"/Injections/*\n# ... and so forth, the last line should never end with a backslash\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -404,7 +407,9 @@
 			files = (
 				B668FA1422E77BD300748C9A /* ViewController.swift in Sources */,
 				B618DA2922E7CA0B008CEF8B /* Daemon.swift in Sources */,
+				B6AE436522EA715600D51B44 /* ProcessDouble.swift in Sources */,
 				B668FA1222E77BD300748C9A /* AppDelegate.swift in Sources */,
+				B6AE436122EA6ECC00D51B44 /* Resolver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +419,7 @@
 			files = (
 				B618DA2422E7C7DD008CEF8B /* InitSpec.swift in Sources */,
 				B618DA6722E7D076008CEF8B /* GeneratedMocks.swift in Sources */,
+				B6AE436722EA73CC00D51B44 /* ResolverSpec.swift in Sources */,
 				B668FA2522E77BD400748C9A /* TunicTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
