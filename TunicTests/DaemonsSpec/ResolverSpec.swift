@@ -11,33 +11,46 @@ import Quick
 import Nimble
 import Cuckoo
 
+import Network
+
 extension String: Error {}
 
 class ResolverSpec: QuickSpec {
     override func spec() {
         var subject: Resolver?
         var spy: MockProcessDouble?
+        var factory: MockProcessFactory?
+
+        let dummyIpAddress = "192.0.2.0"
 
         beforeEach {
-            let factory = MockProcessFactory()
+            factory = MockProcessFactory()
             spy = MockProcessDouble()
-            stub(factory) { stub in
-                when(stub.makeProcess(cmd: "consul")).then({ _ in
-                    return spy!
-                })
+            stub(factory!) { stub in
+                when(stub.makeProcess(cmd: any(), args: any())).thenReturn(spy!)
             }
-            subject = Resolver(processFactory: factory)
+
+            let config = SiteConfig(raftHosts: [dummyIpAddress])
+            subject = Resolver(processFactory: factory!, site: config)
         }
 
         describe("#enable") {
             it("initiates a process of type consul") {
                 stub(spy!) { s in
-                    when(s.run()).then({ () in })
+                    when(s.run()).thenDoNothing()
                 }
+
+                let desiredConstructorArgs: [String] = [
+                    "agent",
+                    "-retry-join", dummyIpAddress
+                ]
 
                 let succeeded = subject!.enable()
                 expect(succeeded).to(beTrue())
                 verify(spy!).run()
+                let captor = ArgumentCaptor<[String]>()
+                verify(factory!).makeProcess(cmd: "consul", args: captor.capture())
+                expect(captor.value!).to(equal(desiredConstructorArgs))
             }
 
             context("when consul process cannot start") {

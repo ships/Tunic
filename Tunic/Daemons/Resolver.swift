@@ -12,8 +12,8 @@ class Resolver: Daemon {
     static let cmd = "consul"
     let task: ProcessDouble
 
-    init(processFactory: ProcessFactory) {
-        task = processFactory.makeProcess(cmd: Resolver.cmd)
+    init(processFactory: ProcessFactory, site: SiteConfig) {
+        task = processFactory.makeProcess(cmd: Resolver.cmd, args: formatArgs(site: site))
     }
 
     func enable() -> Bool {
@@ -25,4 +25,12 @@ class Resolver: Daemon {
 
         return true
     }
+}
+
+private func formatArgs(site: SiteConfig) -> [String] {
+    return site.raftHosts.reduce(["agent"], { (r, s) -> [String] in
+        return r + [
+            "-retry-join", s
+        ]
+    })
 }

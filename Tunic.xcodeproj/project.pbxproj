@@ -22,6 +22,7 @@
 		B618DA6D22E7D202008CEF8B /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B618DA5822E7CFE0008CEF8B /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B618DA6E22E7D206008CEF8B /* Nimble.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = B618DA5622E7CFE0008CEF8B /* Nimble.framework.dSYM */; };
 		B618DA6F22E7D206008CEF8B /* Quick.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = B618DA5922E7CFE0008CEF8B /* Quick.framework.dSYM */; };
+		B625E56922FFA5DB0061D37C /* SiteConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B625E56822FFA5DB0061D37C /* SiteConfig.swift */; };
 		B668FA1222E77BD300748C9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668FA1122E77BD300748C9A /* AppDelegate.swift */; };
 		B668FA1422E77BD300748C9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668FA1322E77BD300748C9A /* ViewController.swift */; };
 		B668FA1622E77BD400748C9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B668FA1522E77BD400748C9A /* Assets.xcassets */; };
@@ -106,6 +107,7 @@
 		B618DA5822E7CFE0008CEF8B /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Build/Mac/Quick.framework; sourceTree = "<group>"; };
 		B618DA5922E7CFE0008CEF8B /* Quick.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Quick.framework.dSYM; path = Build/Mac/Quick.framework.dSYM; sourceTree = "<group>"; };
 		B618DA6622E7D076008CEF8B /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
+		B625E56822FFA5DB0061D37C /* SiteConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteConfig.swift; sourceTree = "<group>"; };
 		B668FA0E22E77BD300748C9A /* Tunic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tunic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B668FA1122E77BD300748C9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B668FA1322E77BD300748C9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -193,6 +195,14 @@
 			path = Carthage;
 			sourceTree = "<group>";
 		};
+		B625E56722FFA5CE0061D37C /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B625E56822FFA5DB0061D37C /* SiteConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		B668FA0522E77BD300748C9A = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +227,7 @@
 		B668FA1022E77BD300748C9A /* Tunic */ = {
 			isa = PBXGroup;
 			children = (
+				B625E56722FFA5CE0061D37C /* Config */,
 				B618DA4322E7CCA2008CEF8B /* Injections */,
 				B618DA2722E7C9B6008CEF8B /* Daemons */,
 				B668FA1122E77BD300748C9A /* AppDelegate.swift */,
@@ -406,6 +417,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B668FA1422E77BD300748C9A /* ViewController.swift in Sources */,
+				B625E56922FFA5DB0061D37C /* SiteConfig.swift in Sources */,
 				B618DA2922E7CA0B008CEF8B /* Daemon.swift in Sources */,
 				B6AE436522EA715600D51B44 /* ProcessDouble.swift in Sources */,
 				B668FA1222E77BD300748C9A /* AppDelegate.swift in Sources */,
