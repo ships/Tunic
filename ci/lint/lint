@@ -1,0 +1,9 @@
+#!/bin/bash -eux
+set -o pipefail
+
+this_dir="$(dirname $0)"
+repo_root="$(cd ${this_dir}/../.. && pwd)"
+
+pushd ${repo_root}
+  swiftlint autocorrect
+popd
