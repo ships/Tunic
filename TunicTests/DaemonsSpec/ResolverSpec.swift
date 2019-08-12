@@ -28,7 +28,7 @@ class ResolverSpec: QuickSpec {
                 when(stub.makeProcess(cmd: any(), args: any())).thenReturn(spy!)
             }
 
-            let config = SiteConfig(raftHosts: [dummyIpAddress])
+            let config = SiteConfig(raftHosts: [dummyIpAddress], datacenter: "replace me", serviceDomain: "replace me")
             subject = Resolver(processFactory: factory!, site: config)
         }
 

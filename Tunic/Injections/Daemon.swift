@@ -11,3 +11,7 @@ import Foundation
 protocol Daemon {
     func enable() -> Bool
 }
+
+protocol DaemonFactory {
+    func resolver(for site: SiteConfig) -> Daemon
+}

@@ -10,4 +10,8 @@ import Network
 
 struct SiteConfig {
     let raftHosts: [String]
+    let datacenter: String
+    let serviceDomain: String
 }
+
+extension SiteConfig: Equatable {}

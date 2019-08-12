@@ -14,6 +14,7 @@ protocol ProcessDouble {
 
 extension Process: ProcessDouble {}
 
+// MARK: - factory for Process/ProcessDouble
 protocol ProcessFactory {
     func makeProcess(cmd: String, args: [String]) -> ProcessDouble
 }

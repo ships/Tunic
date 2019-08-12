@@ -29,6 +29,11 @@
 		B668FA1922E77BD400748C9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B668FA1722E77BD400748C9A /* Main.storyboard */; };
 		B668FA2522E77BD400748C9A /* TunicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668FA2422E77BD400748C9A /* TunicTests.swift */; };
 		B668FA3022E77BD400748C9A /* TunicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668FA2F22E77BD400748C9A /* TunicUITests.swift */; };
+		B67B698F2301134F0070F365 /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67B698E2301134F0070F365 /* ConnectViewController.swift */; };
+		B67B6991230115DE0070F365 /* Supervisor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67B6990230115DE0070F365 /* Supervisor.swift */; };
+		B67B69932301D0AB0070F365 /* SupervisorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67B69922301D0AB0070F365 /* SupervisorSpec.swift */; };
+		B67B69982301F1270070F365 /* ConcreteDaemonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67B69972301F1270070F365 /* ConcreteDaemonFactory.swift */; };
+		B67B699A2301F1450070F365 /* ConcreteProcessFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67B69992301F1450070F365 /* ConcreteProcessFactory.swift */; };
 		B6AE436122EA6ECC00D51B44 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AE436022EA6ECC00D51B44 /* Resolver.swift */; };
 		B6AE436522EA715600D51B44 /* ProcessDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AE436422EA715600D51B44 /* ProcessDouble.swift */; };
 		B6AE436722EA73CC00D51B44 /* ResolverSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AE436622EA73CC00D51B44 /* ResolverSpec.swift */; };
@@ -121,6 +126,11 @@
 		B668FA2B22E77BD400748C9A /* TunicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TunicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B668FA2F22E77BD400748C9A /* TunicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunicUITests.swift; sourceTree = "<group>"; };
 		B668FA3122E77BD400748C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B67B698E2301134F0070F365 /* ConnectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectViewController.swift; sourceTree = "<group>"; };
+		B67B6990230115DE0070F365 /* Supervisor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supervisor.swift; sourceTree = "<group>"; };
+		B67B69922301D0AB0070F365 /* SupervisorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupervisorSpec.swift; sourceTree = "<group>"; };
+		B67B69972301F1270070F365 /* ConcreteDaemonFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteDaemonFactory.swift; sourceTree = "<group>"; };
+		B67B69992301F1450070F365 /* ConcreteProcessFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteProcessFactory.swift; sourceTree = "<group>"; };
 		B6AE436022EA6ECC00D51B44 /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
 		B6AE436422EA715600D51B44 /* ProcessDouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessDouble.swift; sourceTree = "<group>"; };
 		B6AE436622EA73CC00D51B44 /* ResolverSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolverSpec.swift; sourceTree = "<group>"; };
@@ -176,6 +186,7 @@
 		B618DA4322E7CCA2008CEF8B /* Injections */ = {
 			isa = PBXGroup;
 			children = (
+				B67B69962301F0F70070F365 /* ConcreteFactories */,
 				B618DA2822E7CA0B008CEF8B /* Daemon.swift */,
 				B6AE436422EA715600D51B44 /* ProcessDouble.swift */,
 			);
@@ -228,9 +239,11 @@
 			isa = PBXGroup;
 			children = (
 				B625E56722FFA5CE0061D37C /* Config */,
-				B618DA4322E7CCA2008CEF8B /* Injections */,
 				B618DA2722E7C9B6008CEF8B /* Daemons */,
+				B618DA4322E7CCA2008CEF8B /* Injections */,
+				B67B698D230112F50070F365 /* Interface */,
 				B668FA1122E77BD300748C9A /* AppDelegate.swift */,
+				B67B6990230115DE0070F365 /* Supervisor.swift */,
 				B668FA1322E77BD300748C9A /* ViewController.swift */,
 				B668FA1522E77BD400748C9A /* Assets.xcassets */,
 				B668FA1722E77BD400748C9A /* Main.storyboard */,
@@ -245,6 +258,7 @@
 			children = (
 				B618DA2522E7C986008CEF8B /* DaemonsSpec */,
 				B618DA6622E7D076008CEF8B /* GeneratedMocks.swift */,
+				B67B69922301D0AB0070F365 /* SupervisorSpec.swift */,
 				B668FA2422E77BD400748C9A /* TunicTests.swift */,
 				B618DA2322E7C7DD008CEF8B /* InitSpec.swift */,
 				B668FA2622E77BD400748C9A /* Info.plist */,
@@ -259,6 +273,23 @@
 				B668FA3122E77BD400748C9A /* Info.plist */,
 			);
 			path = TunicUITests;
+			sourceTree = "<group>";
+		};
+		B67B698D230112F50070F365 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				B67B698E2301134F0070F365 /* ConnectViewController.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		B67B69962301F0F70070F365 /* ConcreteFactories */ = {
+			isa = PBXGroup;
+			children = (
+				B67B69972301F1270070F365 /* ConcreteDaemonFactory.swift */,
+				B67B69992301F1450070F365 /* ConcreteProcessFactory.swift */,
+			);
+			path = ConcreteFactories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,7 +438,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\nCarthage/Checkouts/Cuckoo/run generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}\"/Injections/*\n# ... and so forth, the last line should never end with a backslash\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\nCarthage/Checkouts/Cuckoo/run generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}\"/Injections/*.swift\n# ... and so forth, the last line should never end with a backslash\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -416,10 +447,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B67B698F2301134F0070F365 /* ConnectViewController.swift in Sources */,
+				B67B69982301F1270070F365 /* ConcreteDaemonFactory.swift in Sources */,
 				B668FA1422E77BD300748C9A /* ViewController.swift in Sources */,
 				B625E56922FFA5DB0061D37C /* SiteConfig.swift in Sources */,
 				B618DA2922E7CA0B008CEF8B /* Daemon.swift in Sources */,
+				B67B699A2301F1450070F365 /* ConcreteProcessFactory.swift in Sources */,
 				B6AE436522EA715600D51B44 /* ProcessDouble.swift in Sources */,
+				B67B6991230115DE0070F365 /* Supervisor.swift in Sources */,
 				B668FA1222E77BD300748C9A /* AppDelegate.swift in Sources */,
 				B6AE436122EA6ECC00D51B44 /* Resolver.swift in Sources */,
 			);
@@ -433,6 +468,7 @@
 				B618DA6722E7D076008CEF8B /* GeneratedMocks.swift in Sources */,
 				B6AE436722EA73CC00D51B44 /* ResolverSpec.swift in Sources */,
 				B668FA2522E77BD400748C9A /* TunicTests.swift in Sources */,
+				B67B69932301D0AB0070F365 /* SupervisorSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
