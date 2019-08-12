@@ -24,7 +24,12 @@ class ConnectViewController: ViewController {
 
         let c = SiteConfig(raftHosts: [raftHostsFld.stringValue], datacenter: datacenterFld.stringValue, serviceDomain: domainFld.stringValue)
         NSLog("connection requested to site with config: \(c)")
+        requestConnection(to: c)
+    }
 
-        Supervisor.instance.connectionRequested(to: c)
+    private
+
+    func requestConnection(to site: SiteConfig) {
+        Supervisor.instance.connectionRequested(to: site)
     }
 }

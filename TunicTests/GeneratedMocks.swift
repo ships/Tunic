@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: Tunic/Injections/Daemon.swift at 2019-08-12 21:24:11 +0000
+// MARK: - Mocks generated from file: Tunic/Injections/Daemon.swift at 2019-08-12 21:36:11 +0000
 
 //
 //  Daemon.swift
@@ -155,22 +155,7 @@ import Foundation
 
 }
 
-// MARK: - Mocks generated from file: Tunic/Injections/File.swift at 2019-08-12 21:24:11 +0000
-
-//
-//  File.swift
-//  Tunic
-//
-//  Created by Early Evening on 8/12/19.
-//  Copyright © 2019 The Better Fish Orchestra. All rights reserved.
-//
-
-import Cuckoo
-@testable import Tunic
-
-import Foundation
-
-// MARK: - Mocks generated from file: Tunic/Injections/ProcessDouble.swift at 2019-08-12 21:24:11 +0000
+// MARK: - Mocks generated from file: Tunic/Injections/ProcessDouble.swift at 2019-08-12 21:36:11 +0000
 
 //
 //  ProcessDouble.swift

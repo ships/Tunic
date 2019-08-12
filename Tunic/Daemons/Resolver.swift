@@ -9,7 +9,7 @@
 import Foundation
 
 class Resolver: Daemon {
-    static let cmd = "consul"
+    static let cmd = "/usr/local/bin/consul"
     let task: ProcessDouble
 
     init(processFactory: ProcessFactory, site: SiteConfig) {
@@ -20,6 +20,7 @@ class Resolver: Daemon {
         do {
             try task.run()
         } catch {
+            NSLog("enabling resolver daemon: \(error)")
             return false
         }
 
