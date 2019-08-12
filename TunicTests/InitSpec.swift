@@ -10,6 +10,8 @@ import Foundation
 import Quick
 import Nimble
 
+extension String: Error {}
+
 class InitSpec: QuickSpec {
     override func spec() {
         it("runs the test suite") {

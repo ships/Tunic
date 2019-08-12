@@ -13,8 +13,6 @@ import Cuckoo
 
 import Network
 
-extension String: Error {}
-
 class ResolverSpec: QuickSpec {
     override func spec() {
         var subject: Resolver?
