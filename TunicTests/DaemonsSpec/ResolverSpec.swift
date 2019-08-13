@@ -40,6 +40,7 @@ class ResolverSpec: QuickSpec {
 
                 let desiredConstructorArgs: [String] = [
                     "agent",
+                    "-data-dir", "/etc/consul.d",
                     "-retry-join", dummyIpAddress
                 ]
 

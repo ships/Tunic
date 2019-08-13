@@ -29,9 +29,12 @@ class Resolver: Daemon {
 }
 
 private func formatArgs(site: SiteConfig) -> [String] {
-    return site.raftHosts.reduce(["agent"], { (r, s) -> [String] in
+    let collection = site.raftHosts.reduce(
+        ["agent", "-data-dir", "/etc/consul.d"], { (r, s) -> [String] in
         return r + [
             "-retry-join", s
         ]
     })
+
+    return collection
 }
