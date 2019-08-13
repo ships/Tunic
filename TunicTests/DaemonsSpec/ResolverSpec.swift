@@ -47,7 +47,7 @@ class ResolverSpec: QuickSpec {
                 expect(succeeded).to(beTrue())
                 verify(spy!).run()
                 let captor = ArgumentCaptor<[String]>()
-                verify(factory!).makeProcess(cmd: "consul", args: captor.capture())
+                verify(factory!).makeProcess(cmd: "/usr/local/bin/consul", args: captor.capture())
                 expect(captor.value!).to(equal(desiredConstructorArgs))
             }
 
