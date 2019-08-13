@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: Tunic/Injections/Daemon.swift at 2019-08-12 21:36:11 +0000
+// MARK: - Mocks generated from file: Tunic/Injections/Daemon.swift at 2019-08-13 01:08:11 +0000
 
 //
 //  Daemon.swift
@@ -42,6 +42,19 @@ import Foundation
 
     }
 
+     func stop() {
+
+    return cuckoo_manager.call("stop()",
+            parameters: (),
+            escapingParameters: (),
+            superclassCall:
+
+                Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                ,
+            defaultCall: __defaultImplStub!.stop())
+
+    }
+
 	 struct __StubbingProxy_Daemon: Cuckoo.StubbingProxy {
 	    private let cuckoo_manager: Cuckoo.MockManager
 
@@ -52,6 +65,11 @@ import Foundation
 	    func enable() -> Cuckoo.ProtocolStubFunction<(), Bool> {
 	        let matchers: [Cuckoo.ParameterMatcher<Void>] = []
 	        return .init(stub: cuckoo_manager.createStub(for: MockDaemon.self, method: "enable() -> Bool", parameterMatchers: matchers))
+	    }
+
+	    func stop() -> Cuckoo.ProtocolStubNoReturnFunction<()> {
+	        let matchers: [Cuckoo.ParameterMatcher<Void>] = []
+	        return .init(stub: cuckoo_manager.createStub(for: MockDaemon.self, method: "stop()", parameterMatchers: matchers))
 	    }
 
 	}
@@ -73,6 +91,12 @@ import Foundation
 	        return cuckoo_manager.verify("enable() -> Bool", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
 	    }
 
+	    @discardableResult
+	    func stop() -> Cuckoo.__DoNotUse<(), Void> {
+	        let matchers: [Cuckoo.ParameterMatcher<Void>] = []
+	        return cuckoo_manager.verify("stop()", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+
 	}
 }
 
@@ -80,6 +104,10 @@ import Foundation
 
      func enable() -> Bool {
         return DefaultValueRegistry.defaultValue(for: (Bool).self)
+    }
+
+     func stop() {
+        return DefaultValueRegistry.defaultValue(for: (Void).self)
     }
 
 }
@@ -155,7 +183,7 @@ import Foundation
 
 }
 
-// MARK: - Mocks generated from file: Tunic/Injections/ProcessDouble.swift at 2019-08-12 21:36:11 +0000
+// MARK: - Mocks generated from file: Tunic/Injections/ProcessDouble.swift at 2019-08-13 01:08:11 +0000
 
 //
 //  ProcessDouble.swift
@@ -199,6 +227,19 @@ import Foundation
 
     }
 
+     func terminate() {
+
+    return cuckoo_manager.call("terminate()",
+            parameters: (),
+            escapingParameters: (),
+            superclassCall:
+
+                Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                ,
+            defaultCall: __defaultImplStub!.terminate())
+
+    }
+
 	 struct __StubbingProxy_ProcessDouble: Cuckoo.StubbingProxy {
 	    private let cuckoo_manager: Cuckoo.MockManager
 
@@ -209,6 +250,11 @@ import Foundation
 	    func run() -> Cuckoo.ProtocolStubNoReturnThrowingFunction<()> {
 	        let matchers: [Cuckoo.ParameterMatcher<Void>] = []
 	        return .init(stub: cuckoo_manager.createStub(for: MockProcessDouble.self, method: "run() throws", parameterMatchers: matchers))
+	    }
+
+	    func terminate() -> Cuckoo.ProtocolStubNoReturnFunction<()> {
+	        let matchers: [Cuckoo.ParameterMatcher<Void>] = []
+	        return .init(stub: cuckoo_manager.createStub(for: MockProcessDouble.self, method: "terminate()", parameterMatchers: matchers))
 	    }
 
 	}
@@ -230,12 +276,22 @@ import Foundation
 	        return cuckoo_manager.verify("run() throws", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
 	    }
 
+	    @discardableResult
+	    func terminate() -> Cuckoo.__DoNotUse<(), Void> {
+	        let matchers: [Cuckoo.ParameterMatcher<Void>] = []
+	        return cuckoo_manager.verify("terminate()", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+
 	}
 }
 
  class ProcessDoubleStub: ProcessDouble {
 
      func run() throws {
+        return DefaultValueRegistry.defaultValue(for: (Void).self)
+    }
+
+     func terminate() {
         return DefaultValueRegistry.defaultValue(for: (Void).self)
     }
 

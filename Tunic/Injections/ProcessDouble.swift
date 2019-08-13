@@ -10,6 +10,7 @@ import Foundation
 
 protocol ProcessDouble {
     func run() throws
+    func terminate()
 }
 
 extension Process: ProcessDouble {}

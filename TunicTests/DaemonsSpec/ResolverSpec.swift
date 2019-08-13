@@ -68,5 +68,17 @@ class ResolverSpec: QuickSpec {
                 }
             }
         }
+
+        describe("#stop") {
+            it("sends a termination signal to its task") {
+                stub(spy!) { s in
+                    when(s.terminate()).thenDoNothing()
+                }
+
+                subject?.stop()
+
+                verify(spy!).terminate()
+            }
+        }
     }
 }

@@ -26,6 +26,10 @@ class Resolver: Daemon {
 
         return true
     }
+
+    func stop() {
+        task.terminate()
+    }
 }
 
 private func formatArgs(site: SiteConfig) -> [String] {

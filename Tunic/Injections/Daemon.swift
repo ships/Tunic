@@ -10,6 +10,7 @@ import Foundation
 
 protocol Daemon {
     func enable() -> Bool
+    func stop()
 }
 
 protocol DaemonFactory {

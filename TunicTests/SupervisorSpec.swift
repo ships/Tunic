@@ -22,6 +22,7 @@ class SupervisorSpec: QuickSpec {
             daemon = MockDaemon()
             stub(daemon!) { s in
                 when(s.enable()).thenReturn(true)
+                when(s.stop()).thenDoNothing()
             }
             stub(factory!) { s in
                 when(s.resolver(for: any())).thenReturn(daemon!)
@@ -42,6 +43,19 @@ class SupervisorSpec: QuickSpec {
                 expect(c.value).to(equal(config))
 
                 verify(daemon!).enable()
+            }
+        }
+
+        describe("#cleanup") {
+            it("stops any daemons that were started") {
+                let config = SiteConfig(
+                    raftHosts: ["raft"],
+                    datacenter: "dc",
+                    serviceDomain: "mydom")
+                subject!.connectionRequested(to: config)
+                subject!.cleanup()
+
+                verify(daemon!).stop()
             }
         }
     }
