@@ -28,7 +28,7 @@ class ResolverSpec: QuickSpec {
                 when(stub.makeProcess(cmd: any(), args: any())).thenReturn(spy!)
             }
 
-            let config = SiteConfig(raftHosts: [dummyIpAddress], datacenter: "replace me", serviceDomain: "replace me")
+            let config = SiteConfig(raftHosts: [dummyIpAddress], datacenter: "dc1", serviceDomain: "mydom")
             subject = Resolver(processFactory: factory!, site: config)
         }
 
@@ -41,7 +41,9 @@ class ResolverSpec: QuickSpec {
                 let desiredConstructorArgs: [String] = [
                     "agent",
                     "-data-dir", "/tmp/consul.d",
-                    "-retry-join", dummyIpAddress
+                    "-retry-join", dummyIpAddress,
+                    "-datacenter", "dc1",
+                    "-domain", "mydom"
                 ]
 
                 let succeeded = subject!.enable()

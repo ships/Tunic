@@ -38,7 +38,10 @@ private func formatArgs(site: SiteConfig) -> [String] {
         return r + [
             "-retry-join", s
         ]
-    })
+    }) + [
+        "-datacenter", site.datacenter,
+        "-domain", site.serviceDomain
+    ]
 
     return collection
 }
