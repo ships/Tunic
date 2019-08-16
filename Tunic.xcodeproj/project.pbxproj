@@ -179,9 +179,8 @@
 			children = (
 				B6AE436022EA6ECC00D51B44 /* Resolver.swift */,
 			);
-			name = Daemons;
-			path = /Users/eve/workspace/Tunic/Tunic/Daemons;
-			sourceTree = "<absolute>";
+			path = Daemons;
+			sourceTree = "<group>";
 		};
 		B618DA4322E7CCA2008CEF8B /* Injections */ = {
 			isa = PBXGroup;
