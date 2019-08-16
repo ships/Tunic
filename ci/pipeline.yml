@@ -1,0 +1,32 @@
+---
+resources:
+- name: subject
+  type: git
+  source:
+    uri: git@github.com:ships/Tunic
+    private_key: ((github_ssh_ships.private_key))
+
+- name: concourse-generics
+  type: git
+  source:
+    uri: https://github.com/ships/concourse-generics
+
+jobs:
+- name: unit-test
+  serial: true
+  plan:
+  - in_parallel:
+    - get: subject
+      trigger: true
+    - { get: concourse-generics }
+  - task: run-unit-suite
+    file: concourse-generics/unit-tests/darwin/any.yml
+
+- name: lint
+  plan:
+  - in_parallel:
+    - get: subject
+      trigger: true
+    - { get: concourse-generics }
+  - task: lint
+    file: concourse-generics/lint/linux/swift.yml
